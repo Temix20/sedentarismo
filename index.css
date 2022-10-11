@@ -1,0 +1,241 @@
+*{margin:0%;
+    padding: 0%;
+    box-sizing: border-box;}
+    html{
+        scroll-behavior: smooth;
+    }
+    body{
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    
+    }
+    .hero { 
+     
+       
+       
+        width: 100%;
+        height: 650px; 
+        background: #800080; /* fallback for old browsers */
+        background: -webkit-linear-gradient(to right, hsla(300, 100%, 25%, 0.667), hsla(350, 100%, 88%, 0.7)),url(https://www.desdelaplaza.com/wp-content/uploads/2015/06/sedentarismo-en-la-oficina.jpg); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+        background: linear-gradient(to right, hsla(300, 100%, 25%, 0.66), hsla(350, 100%, 88%, 0.7)),url(https://www.desdelaplaza.com/wp-content/uploads/2015/06/sedentarismo-en-la-oficina.jpg); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+           background-repeat: no-repeat;
+           background-size: cover;
+          background-position: center;
+           background-attachment: fixed;
+           position: relative;
+           overflow:hidden;
+        }
+
+    .textos-hero{
+       
+        height: 500px;
+        color:aliceblue;
+        display: flex;
+        flex-direction: column;
+       justify-content: center;
+      align-items: center;
+      
+    }
+    .textos-hero h1{
+        font-size: 80px;
+
+    }
+
+.textos-hero p{
+        font-size: 30px;
+        margin-bottom: 20px;
+        
+    }
+    .textos-hero a{
+      
+        display:inline-block;
+        text-decoration: none;
+        padding: 12px 15px;
+        border: #fff solid;
+        border-radius:8px ;
+        color: aliceblue;
+    
+   
+    }
+    .svg-hero{
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        
+    }
+    /*estilos generales*/
+   .contenedor,
+   .wave-contenedor{
+    width: 90%;
+    max-width: 1000px;
+overflow: hidden;
+margin: auto;
+padding: 0 0 80px 0;
+}
+    .contenedor{
+        padding: 80px o;
+        
+
+    }
+    .titulo {
+        font-weight: 300;
+        font-size: 35px;
+        text-align: center;
+        align-items: center;
+        margin-bottom: 30px;
+    }
+    .titulo.left{
+        text-align: left;
+        color: rgb(26, 0, 93);
+    }
+    .titulo.right{
+        text-align: right;
+    }
+    .parrafo a{
+        
+        text-decoration: none;
+        padding: 12px 15px;
+        border: rgb(24, 20, 20) solid;
+        border-radius:8px ;
+        color: rgb(0, 0, 0);
+    }
+
+    /*Website*/
+.website{
+    display: flex;
+    justify-content: space-between;
+}
+.website img{
+    width: 48%;
+  
+}
+.website .contenedor-textos-main{
+    width: 40%;
+   
+}
+.parrafo{
+    font-size: 21px;
+    text-align:justify;
+    margin-bottom: 5px;
+
+}
+#ul{
+    font-size: 21px;
+}
+#imagen{
+    text-align: center;
+}
+/*Info*/
+.info{
+    
+    color:rgb(0, 0, 0);
+    font-size: 20px;
+    text-align: justify;
+    background: #fff;
+}
+
+
+/*galeria*/
+.galeria{
+   margin-top: 5px;
+   margin-bottom: 20px;
+    background:rgb(239, 236, 236);
+}
+.galeria-cont{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    overflow: hidden;
+}
+.galeria-cont>img{
+    width: 30%;
+    object-fit: cover;
+    margin-bottom: 20px;
+    display:block;
+    box-shadow: 0px 0px 3px 0px rgb(0, 0, 0,.5);
+    cursor:pointer;
+    overflow: hidden;
+    
+}
+/*info2*/
+.last-section{
+    display:flex ;
+    flex-wrap: wrap;
+    justify-content: space-between;
+   
+    
+}
+.last-section img{
+    width: 48%;
+}
+.last-section.contenedor-textos-main{
+width: 40%;
+margin-bottom: 0px;
+}
+/*footer*/
+footer{
+ 
+    background: #800080;
+    color:#fff;
+}
+.form{
+display: flex;
+justify-content: space-between;
+
+}
+@media screen and (max-width:800px){
+    .textos-hero h1{
+        text-align: center;
+        font-size: 50px;
+
+    }
+    /*estilos generales*/
+    .titulo{
+        font-size: 35px;
+}
+.titulo.left{
+    text-align: center;} 
+.info p{
+    text-align: center;
+} 
+/*website*/
+.website{
+    flex-direction:column-reserve;
+    justify-content: center;
+    align-items: center;
+} 
+.website img {
+    width: 100%;
+
+}
+.website.last-section.contenedor-textos-main{
+    width: 100%;
+}
+/*galeria*/
+.galeria-cont>img{
+    width: 48%;
+}
+.last-section img{
+    width: 98%;
+}
+.last-section.contenedor-textos-main{
+    width: 98%;
+    margin-bottom: 20px;
+}
+}
+@media screen and (max-width:400px){
+    .titulo,
+    .textos-hero h1{
+        font-size: 30px;
+    }
+    .textos-hero p{
+        font-size: 20px;
+        text-align: center;
+    }
+    .website.contenedor-textos-main{
+        margin-bottom: 30px;
+    }
+    .galeria-cont>img{
+        width: 97%;
+    }
+}
